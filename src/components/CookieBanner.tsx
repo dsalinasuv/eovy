@@ -16,10 +16,17 @@ export function CookieBanner({ lang = 'es' }: { lang?: 'es' | 'en' }) {
   useEffect(() => {
     try {
       const stored = localStorage.getItem(CONSENT_KEY);
-      if (!stored) setVisible(true);
-      else {
+      if (!stored) {
+        setVisible(true);
+      } else {
         const data: ConsentData = JSON.parse(stored);
-        // Show again after 12 months
+        // Sincronizar estado de Consent Mode v2 si el usuario ya lo aceptó previamente
+        if (data.accepted && typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('consent', 'update', {
+            analytics_storage: 'granted',
+          });
+        }
+        // Mostrar nuevamente si transcurrieron más de 12 meses
         const stored_date = new Date(data.timestamp);
         const months_diff =
           (Date.now() - stored_date.getTime()) / (1000 * 60 * 60 * 24 * 30);

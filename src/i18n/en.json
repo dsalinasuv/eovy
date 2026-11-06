@@ -175,8 +175,9 @@
       "successTitle": "Request received.",
       "successText": "We will reply from hello@ecoailab.es.",
       "error": "It could not be sent. Write to us at",
-      "privacy": "By sending you accept our",
-      "privacyLink": "privacy policy"
+      "privacyConsent": "I have read and accept the",
+      "privacyLink": "privacy policy",
+      "privacyConsentLegal": "for the handling of my inquiry by CustomAI Solutions Lab S.L."
     }
   },
   "footer": {

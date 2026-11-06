@@ -7,12 +7,21 @@ const WINDOW_MS = 60 * 60 * 1000;
 const MAX_PER_WINDOW = 5;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Límite por IP en memoria: válido para una sola instancia; en producción, añadir límite en el proxy.
+// Límite por IP en memoria con purga automática para evitar fugas de memoria.
 const hits = new Map<string, number[]>();
 
 function rateLimited(ip: string): boolean {
   const now = Date.now();
-  const recent = (hits.get(ip) ?? []).filter((t) => now - t < WINDOW_MS);
+  // Purgar entradas expiradas si el mapa supera 200 IPs para evitar fugas de memoria
+  if (hits.size > 200) {
+    hits.forEach((times, k) => {
+      const active = times.filter((t: number) => now - t < WINDOW_MS);
+      if (active.length === 0) hits.delete(k);
+      else hits.set(k, active);
+    });
+  }
+
+  const recent = (hits.get(ip) ?? []).filter((t: number) => now - t < WINDOW_MS);
   if (recent.length >= MAX_PER_WINDOW) {
     hits.set(ip, recent);
     return true;
@@ -73,8 +82,15 @@ export async function POST(request: Request) {
 
   if (!name || !email || !company) return fail('Faltan campos obligatorios.', 400);
   if (!EMAIL_RE.test(email)) return fail('Revise los datos del formulario.', 400);
+  if (body.privacy !== true) {
+    return fail('Debe aceptar la política de privacidad para enviar el formulario.', 400);
+  }
 
-  const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
+  const rawIp =
+    request.headers.get('cf-connecting-ip') ||
+    request.headers.get('x-real-ip') ||
+    request.headers.get('x-forwarded-for')?.split(',')[0]?.trim();
+  const ip = rawIp && rawIp.length <= 45 ? rawIp : 'unknown';
   if (rateLimited(ip)) return fail('Demasiadas solicitudes. Inténtelo más tarde.', 429);
 
   const smtp = mailer();

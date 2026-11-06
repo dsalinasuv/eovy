@@ -50,3 +50,4 @@ jobs:
           context: .
           push: false
           tags: eovy-web:latest
+

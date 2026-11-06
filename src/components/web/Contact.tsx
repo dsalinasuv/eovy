@@ -24,6 +24,12 @@ export function Contact({ t }: { t: Dict }) {
     const field = (k: string) => String(data.get(k) ?? '');
 
     setStatus('sending');
+    const privacyAccepted = data.get('privacy') === 'on';
+    if (!privacyAccepted) {
+      setStatus('error');
+      return;
+    }
+
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
@@ -34,6 +40,7 @@ export function Contact({ t }: { t: Dict }) {
           company: field('company'),
           message: field('message'),
           website: field('website'),
+          privacy: privacyAccepted,
         }),
       });
       if (!res.ok) throw new Error('request_failed');
@@ -106,6 +113,25 @@ export function Contact({ t }: { t: Dict }) {
               <label htmlFor="contact-website">Website</label>
               <input id="contact-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
             </div>
+
+            {/* Consentimiento explícito RGPD */}
+            <div className="flex items-start gap-3 pt-1">
+              <input
+                id="contact-privacy"
+                name="privacy"
+                type="checkbox"
+                required
+                className="mt-1 h-4 w-4 rounded border-eo-ink/30 text-eo-leaf focus:ring-eo-leaf"
+              />
+              <label htmlFor="contact-privacy" className="text-xs text-eo-ink/80 leading-relaxed">
+                {f.privacyConsent}{' '}
+                <Link href="/privacy-policy" className="font-semibold text-eo-leaf underline" target="_blank">
+                  {f.privacyLink}
+                </Link>{' '}
+                {f.privacyConsentLegal}.
+              </label>
+            </div>
+
             <button
               type="submit"
               disabled={status === 'sending'}
@@ -123,13 +149,6 @@ export function Contact({ t }: { t: Dict }) {
                 {f.error} <a href={`mailto:${EMAIL}`} className="font-medium underline">{EMAIL}</a>
               </p>
             )}
-            <p className="text-sm text-eo-ink/70">
-              {f.privacy}{' '}
-              <Link href="/privacy-policy" className="font-medium text-eo-leaf underline">
-                {f.privacyLink}
-              </Link>
-              .
-            </p>
           </form>
         </Reveal>
       </div>

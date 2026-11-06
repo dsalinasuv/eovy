@@ -44,3 +44,4 @@ Antes de solicitar la integración de cambios en `main`:
 1. Ejecutar la compilación TypeScript y validación de tipos: `npm run build` o `npx tsc --noEmit`.
 2. Verificar que los contenedores locales levanten sin advertencias: `docker compose up -d --build`.
 3. Comprobar que no existan errores de consola (404 o peticiones fallidas) navegando por la web y las páginas legales.
+

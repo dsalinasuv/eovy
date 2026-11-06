@@ -38,3 +38,4 @@ Este proyecto implementa:
 - **Cero Secretos en Código:** Ninguna credencial, clave o token sensible se almacena en el control de versiones. Todas las variables de entorno se inyectan en tiempo de ejecución.
 - **Cabeceras HTTP de Seguridad:** Implementación de `Content-Security-Policy`, `X-Frame-Options: SAMEORIGIN`, `X-Content-Type-Options: nosniff`, `Strict-Transport-Security` (HSTS) y `Referrer-Policy`.
 - **Protección Perimetral y Anti-Spam:** Formularios protegidos con campo trampa (*honeypot*), saneamiento estricto de inputs y límites de frecuencia por IP (*rate limiting*).
+
