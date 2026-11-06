@@ -22,5 +22,13 @@ export function seoMetadata(lang: Lang): Metadata {
       type: 'website',
     },
     twitter: { card: 'summary_large_image', title: s.ogTitle, description: s.ogDescription },
+    other: {
+      'geo.region': 'ES-V',
+      'geo.placename': 'Valencia, España',
+      'geo.position': '39.4699;-0.3763',
+      'ICBM': '39.4699, -0.3763',
+      'distribution': 'Global',
+      'rating': 'General',
+    },
   };
 }
