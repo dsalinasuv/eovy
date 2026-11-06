@@ -1,0 +1,195 @@
+{
+  "seo": {
+    "title": "Eovy — Weather and climate forecasting for renewables",
+    "description": "Sub-seasonal forecasting for wind and solar energy: anomalies and probabilities of wind and radiation weeks to months ahead, with Earth observation and AI.",
+    "ogTitle": "Eovy — Weather and climate forecasting for renewable energy",
+    "ogDescription": "Sub-seasonal forecasting of wind and solar radiation weeks to months ahead, with Earth observation and AI.",
+    "keywords": [
+      "weather forecasting",
+      "climate forecasting",
+      "sub-seasonal forecasting",
+      "S2S forecast",
+      "wind power forecast",
+      "solar forecast",
+      "wind resource",
+      "solar resource",
+      "ERA5 Copernicus",
+      "Earth observation",
+      "wind farm",
+      "solar PV plant"
+    ]
+  },
+  "nav": {
+    "project": "Project",
+    "how": "How it works",
+    "science": "Science",
+    "api": "API",
+    "uses": "Use cases",
+    "contact": "Contact",
+    "access": "Access",
+    "cta": "Get in touch",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "title": "**Weather and climate forecasting** for renewable energy",
+    "subtitle": "Sub-seasonal forecasting weeks and months ahead, with Earth observation and our own AI.",
+    "cta": "Get in touch",
+    "ctaSecondary": "Discover the project",
+    "tagA": "01 Wind Farm · Solar PV Plant",
+    "tagB": "02 Valencia · Spain",
+    "scroll": "Scroll",
+    "goToSlide": "Show image",
+    "slideAlts": [
+      "Wind farm on green hills in warm light",
+      "Wind farm under a blue sky"
+    ]
+  },
+  "statement": {
+    "text": "**Sub-seasonal forecasting** for **wind and solar energy**. Earth observation and artificial intelligence to **plan weeks and months ahead**.",
+    "note": "Weeks to months ahead: anomalies and probabilities, not a single day."
+  },
+  "how": {
+    "pill": "How it works",
+    "title": "From data to your decision",
+    "text": "Three steps, always with its uncertainty range.",
+    "steps": [
+      { "title": "Data", "desc": "Satellites, reanalysis and weather ensembles from open sources." },
+      { "title": "Models", "desc": "Calibrated models estimate wind and radiation at your site." },
+      { "title": "Delivery", "desc": "App and API with anomalies, probabilities and ranges." }
+    ]
+  },
+  "scope": {
+    "pill": "What it predicts",
+    "title": "Wind and radiation per site",
+    "text": "Anomalies and probabilities from 1 to 6 weeks ahead, with seasonal context.",
+    "columns": [
+      {
+        "title": "Variables",
+        "items": ["Hub-height wind", "Solar radiation"]
+      },
+      {
+        "title": "Horizons",
+        "items": ["Weeks 1 to 6", "Seasonal context"]
+      },
+      {
+        "title": "Results",
+        "items": ["Anomaly versus climatology", "Tercile probability", "P10 to P90 range"]
+      }
+    ]
+  },
+  "app": {
+    "pill": "The app",
+    "title": "A clear interface",
+    "text": "**Anomaly maps**, **tercile probabilities** and **per-asset scenarios**, in a dashboard built for decisions.",
+    "frameLabel": "Eovy app preview",
+    "placeholder": "Coming soon"
+  },
+  "api": {
+    "pill": "API",
+    "status": "In development",
+    "title": "Forecasts, in your systems",
+    "text": "Query the forecasts of each park with an API key and bring them into your own repository.",
+    "points": ["One key per customer", "JSON and CSV", "Updated with every model run"],
+    "codeLabel": "Example request"
+  },
+  "science": {
+    "pill": "Science",
+    "title": "Technology transfer",
+    "text": "From **Earth observation**, **AI** and **forecasting** to data-driven decision-making.",
+    "items": [
+      { "title": "Earth observation", "desc": "Satellite information turned into variables useful for your asset." },
+      { "title": "Artificial intelligence", "desc": "Own models, calibrated for each site." },
+      { "title": "Forecasting", "desc": "Forecasts with their uncertainty range." }
+    ]
+  },
+  "uses": {
+    "pill": "Use cases",
+    "title": "Built for renewable operators",
+    "text": "Anticipating windy, cloudy or calm periods gives more room to plan.",
+    "imageAlt": "Aerial view of a solar PV plant",
+    "items": [
+      { "title": "Wind farm", "desc": "Operation and maintenance planned months ahead." },
+      { "title": "Solar PV plant", "desc": "Anticipation of cloudier or sunnier periods." },
+      { "title": "Portfolio management", "desc": "Support for forward contract planning." }
+    ]
+  },
+  "faq": {
+    "pill": "Questions",
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What is sub-seasonal forecasting?",
+        "a": "It is forecasting weeks or months ahead. It does not hit a specific day: it estimates whether the period will be windier, cloudier or calmer than normal."
+      },
+      {
+        "q": "Which variables does Eovy offer?",
+        "a": "Hub-height wind and solar radiation for each site."
+      },
+      {
+        "q": "How is uncertainty expressed?",
+        "a": "With anomalies, tercile probabilities and a P10 to P90 range in every result."
+      },
+      {
+        "q": "Can I connect it to my systems?",
+        "a": "Yes, with a per-customer API key. It is in development; write to us to know when it will be available."
+      },
+      {
+        "q": "How do I access the app?",
+        "a": "On request. Tell us which assets you manage and we will give you access to the demo."
+      }
+    ]
+  },
+  "beyond": {
+    "pill": "EcoAI Lab",
+    "title": "Beyond energy",
+    "text": "EcoAI Lab builds its own AI models and Earth observation products for other sectors.",
+    "labLink": "Visit ecoailab.es",
+    "featured": {
+      "tag": "Agrotech",
+      "title": "GreenGrow",
+      "text": "It estimates and predicts crop production months ahead. Image sensors measure fruit size and colour to refine the estimate.",
+      "cta": "Discover GreenGrow"
+    },
+    "items": [
+      { "title": "Blade inspection", "desc": "Computer vision on drone imagery of wind farms." },
+      { "title": "Precision agriculture", "desc": "Thermal imagery to treat pests only where needed, and irrigation models to cut water use." },
+      { "title": "Emergency response", "desc": "Near real-time wildfire detection with Meteosat MTG and mud mapping after the DANA floods." }
+    ],
+    "transfer": "Technology transfer: from Earth observation research to operational products."
+  },
+  "contact": {
+    "pill": "Contact",
+    "title": "Let's talk about your project",
+    "text": "Tell us which assets you manage and how you plan.",
+    "emailLabel": "Email",
+    "form": {
+      "name": "Name",
+      "email": "Work email",
+      "company": "Company",
+      "message": "Message (optional)",
+      "submit": "Send",
+      "sending": "Sending…",
+      "successTitle": "Request received.",
+      "successText": "We will reply from hello@ecoailab.es.",
+      "error": "It could not be sent. Write to us at",
+      "privacy": "By sending you accept our",
+      "privacyLink": "privacy policy"
+    }
+  },
+  "footer": {
+    "tagline": "Sub-seasonal forecasting for renewable energy.",
+    "projectTitle": "Project",
+    "labTitle": "EcoAI Lab",
+    "legalTitle": "Legal",
+    "app": "The app",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "aiAct": "EU AI Act",
+    "court": "Courts of Valencia, Spain",
+    "rights": "© CustomAI Solutions Lab S.L. All rights reserved."
+  }
+}

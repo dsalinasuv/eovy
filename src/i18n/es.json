@@ -1,0 +1,195 @@
+{
+  "seo": {
+    "title": "Eovy — Forecasting meteorológico y climático para renovables",
+    "description": "Forecasting subestacional para energía eólica y solar: anomalías y probabilidades de viento y radiación a semanas y meses vista, con satélites e IA.",
+    "ogTitle": "Eovy — Forecasting meteorológico y climático para energías renovables",
+    "ogDescription": "Forecasting subestacional de viento y radiación solar a semanas y meses vista, con observación de la Tierra e IA.",
+    "keywords": [
+      "forecasting meteorológico",
+      "forecasting climático",
+      "forecasting subestacional",
+      "predicción subestacional",
+      "previsión eólica",
+      "previsión solar",
+      "recurso eólico",
+      "recurso solar",
+      "ERA-5 Copernicus",
+      "observación de la Tierra",
+      "Parque Eólico",
+      "Planta Fotovoltaica"
+    ]
+  },
+  "nav": {
+    "project": "Proyecto",
+    "how": "Cómo funciona",
+    "science": "Ciencia",
+    "api": "API",
+    "uses": "Aplicaciones",
+    "contact": "Contacto",
+    "access": "Acceso",
+    "cta": "Hablemos",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mainNav": "Navegación principal",
+    "skip": "Saltar al contenido"
+  },
+  "hero": {
+    "title": "**Forecasting meteorológico y climático** para energías renovables",
+    "subtitle": "Forecasting subestacional a semanas y meses vista, con observación de la Tierra e IA propia.",
+    "cta": "Hablemos",
+    "ctaSecondary": "Conocer el proyecto",
+    "tagA": "01 Parque Eólico · Planta Fotovoltaica",
+    "tagB": "02 Valencia · España",
+    "scroll": "Scroll",
+    "goToSlide": "Ver imagen",
+    "slideAlts": [
+      "Parque Eólico sobre colinas verdes con luz cálida",
+      "Parque Eólico bajo un cielo azul"
+    ]
+  },
+  "statement": {
+    "text": "**Forecasting subestacional** para **energía eólica y solar**. Observación de la Tierra e inteligencia artificial para **planificar con semanas y meses de antelación**.",
+    "note": "Semanas a meses vista: anomalías y probabilidades, no un día concreto."
+  },
+  "how": {
+    "pill": "Cómo funciona",
+    "title": "De los datos a su decisión",
+    "text": "Tres pasos, siempre con su rango de incertidumbre.",
+    "steps": [
+      { "title": "Datos", "desc": "Satélites, reanálisis y conjuntos meteorológicos de fuentes abiertas." },
+      { "title": "Modelos", "desc": "Modelos calibrados estiman viento y radiación en su emplazamiento." },
+      { "title": "Entrega", "desc": "Aplicación y API con anomalías, probabilidades y rangos." }
+    ]
+  },
+  "scope": {
+    "pill": "Qué predice",
+    "title": "Viento y radiación por emplazamiento",
+    "text": "Anomalías y probabilidades de 1 a 6 semanas, con contexto estacional.",
+    "columns": [
+      {
+        "title": "Variables",
+        "items": ["Viento a altura de buje", "Radiación solar"]
+      },
+      {
+        "title": "Horizontes",
+        "items": ["Semanas 1 a 6", "Contexto estacional"]
+      },
+      {
+        "title": "Resultados",
+        "items": ["Anomalía frente a la climatología", "Probabilidad por terciles", "Rango P10 a P90"]
+      }
+    ]
+  },
+  "app": {
+    "pill": "La aplicación",
+    "title": "Una interfaz clara",
+    "text": "**Mapas de anomalía**, **probabilidades por tercil** y **escenarios por activo**, en un panel pensado para decidir.",
+    "frameLabel": "Vista previa de la aplicación Eovy",
+    "placeholder": "Próximamente"
+  },
+  "api": {
+    "pill": "API",
+    "status": "En desarrollo",
+    "title": "Las previsiones, en sus sistemas",
+    "text": "Consulte las previsiones de cada parque con una clave de API y llévelas a su propio repositorio.",
+    "points": ["Una clave por cliente", "JSON y CSV", "Se actualiza con cada ejecución del modelo"],
+    "codeLabel": "Ejemplo de petición"
+  },
+  "science": {
+    "pill": "Ciencia",
+    "title": "Transferencia tecnológica",
+    "text": "De la **observación de la Tierra**, la **IA** y el **forecasting** a la toma de decisiones basadas en datos.",
+    "items": [
+      { "title": "Observación de la Tierra", "desc": "Información de satélite convertida en variables útiles para su activo." },
+      { "title": "Inteligencia artificial", "desc": "Modelos propios, calibrados para cada emplazamiento." },
+      { "title": "Forecasting", "desc": "Previsiones con su rango de incertidumbre." }
+    ]
+  },
+  "uses": {
+    "pill": "Aplicaciones",
+    "title": "Pensado para quien opera renovables",
+    "text": "Anticipar periodos ventosos, nubosos o tranquilos da más margen para planificar.",
+    "imageAlt": "Planta Fotovoltaica vista desde el aire",
+    "items": [
+      { "title": "Parque Eólico", "desc": "Operación y mantenimiento con meses de antelación." },
+      { "title": "Planta Fotovoltaica", "desc": "Anticipación de periodos más nubosos o soleados." },
+      { "title": "Gestión de cartera", "desc": "Apoyo a la planificación de contratos a plazo." }
+    ]
+  },
+  "faq": {
+    "pill": "Preguntas",
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Qué es el forecasting subestacional?",
+        "a": "Es la previsión a semanas o meses vista. No acierta un día concreto: estima si el periodo será más ventoso, nuboso o tranquilo de lo normal."
+      },
+      {
+        "q": "¿Qué variables ofrece Eovy?",
+        "a": "Viento a altura de buje y radiación solar para cada emplazamiento."
+      },
+      {
+        "q": "¿Cómo se expresa la incertidumbre?",
+        "a": "Con anomalías, probabilidades por terciles y un rango P10 a P90 en cada resultado."
+      },
+      {
+        "q": "¿Puedo conectarlo a mis sistemas?",
+        "a": "Sí, con una API de clave por cliente. Está en desarrollo; escríbanos para saber cuándo estará disponible."
+      },
+      {
+        "q": "¿Cómo accedo a la aplicación?",
+        "a": "Por solicitud. Cuéntenos qué activos gestiona y le damos acceso a la demo."
+      }
+    ]
+  },
+  "beyond": {
+    "pill": "EcoAI Lab",
+    "title": "Más allá de la energía",
+    "text": "EcoAI Lab desarrolla sus propios modelos de IA y productos de observación de la Tierra para otros sectores.",
+    "labLink": "Visitar ecoailab.es",
+    "featured": {
+      "tag": "Agrotech",
+      "title": "GreenGrow",
+      "text": "Estima y predice la producción agrícola con meses de antelación. Sensores de imagen miden tamaño y color del fruto para afinar la estimación.",
+      "cta": "Conocer GreenGrow"
+    },
+    "items": [
+      { "title": "Inspección de palas", "desc": "Visión por computador sobre imágenes de dron en parques eólicos." },
+      { "title": "Agricultura de precisión", "desc": "Imágenes térmicas para tratar plagas solo donde hace falta y modelos de riego para reducir el consumo de agua." },
+      { "title": "Emergencias", "desc": "Detección de incendios casi en tiempo real con Meteosat MTG y mapas de fango tras la DANA." }
+    ],
+    "transfer": "Transferencia tecnológica: de la investigación en observación de la Tierra a productos operativos."
+  },
+  "contact": {
+    "pill": "Contacto",
+    "title": "Hablemos de su proyecto",
+    "text": "Cuéntenos qué activos gestiona y cómo planifica.",
+    "emailLabel": "Correo",
+    "form": {
+      "name": "Nombre",
+      "email": "Email corporativo",
+      "company": "Empresa",
+      "message": "Mensaje (opcional)",
+      "submit": "Enviar",
+      "sending": "Enviando…",
+      "successTitle": "Solicitud recibida.",
+      "successText": "Le responderemos desde hello@ecoailab.es.",
+      "error": "No se pudo enviar. Escríbanos a",
+      "privacy": "Al enviar acepta nuestra",
+      "privacyLink": "política de privacidad"
+    }
+  },
+  "footer": {
+    "tagline": "Forecasting subestacional para energías renovables.",
+    "projectTitle": "Proyecto",
+    "labTitle": "EcoAI Lab",
+    "legalTitle": "Legal",
+    "app": "La aplicación",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookies": "Cookies",
+    "aiAct": "EU AI Act",
+    "court": "Tribunales de Valencia, España",
+    "rights": "© CustomAI Solutions Lab S.L. Todos los derechos reservados."
+  }
+}

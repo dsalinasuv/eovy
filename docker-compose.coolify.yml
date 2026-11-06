@@ -1,0 +1,28 @@
+# Web en producción (Coolify): un único contenedor sin base de datos ni acceso a la API.
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+      - SITE_URL=${SITE_URL}
+      - NEXT_PUBLIC_APP_URL=${APP_URL}
+      - CONTACT_TO=${CONTACT_TO}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_SECURITY=${SMTP_SECURITY}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - SMTP_FROM=${SMTP_FROM}
+    deploy:
+      resources:
+        limits:
+          memory: 600M
+    networks:
+      - eovy_web_prod_net
+    restart: always
+
+networks:
+  eovy_web_prod_net:
+    driver: bridge

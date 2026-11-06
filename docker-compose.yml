@@ -1,0 +1,23 @@
+# Pila de la web: un único contenedor sin base de datos ni acceso a la API.
+name: eovy-web
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eovy_web_dev
+    ports:
+      - "3005:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - ./.env
+    networks:
+      - eovy_web_net
+    restart: unless-stopped
+
+networks:
+  eovy_web_net:
+    driver: bridge
