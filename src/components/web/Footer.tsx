@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Mail, MapPin } from 'lucide-react';
 import type { Dict } from '@/i18n/dictionaries';
 import { Wordmark } from './Wordmark';
@@ -16,15 +15,9 @@ export function Footer({ t }: { t: Dict }) {
           <div className="lg:col-span-2">
             <Wordmark tone="light" size="lg" />
             <p className="mt-4 max-w-sm text-white/80">{f.tagline}</p>
-            <a href="https://ecoailab.es" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block">
-              <Image
-                src="/images/logo_ecoai.png"
-                alt="EcoAI Lab"
-                width={375}
-                height={289}
-                className="h-auto w-28 rounded-xl"
-              />
-            </a>
+            <p className="mt-5 text-xs text-white/60 font-mono uppercase tracking-wider">
+              CustomAI Solutions Lab S.L. · Propiedad Privada
+            </p>
           </div>
 
           <div>
@@ -98,7 +91,7 @@ export function Footer({ t }: { t: Dict }) {
           </div>
           <div className="md:text-right">
             <p>
-              © {new Date().getFullYear()} Eovy · {f.rights}
+              © {new Date().getFullYear()} {f.rights}
             </p>
             <p className="mt-1 text-white/60">{f.court}</p>
           </div>

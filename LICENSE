@@ -1,27 +1,38 @@
-PROPRIETARY AND CONFIDENTIAL LICENSE
+===============================================================================
+PROPRIETARY AND CONFIDENTIAL SOFTWARE LICENSE & COPYRIGHT NOTICE
+===============================================================================
 
 Copyright (c) 2026 CustomAI Solutions Lab S.L. All Rights Reserved.
 Todos los derechos reservados.
 
+TITULARIDAD:
+Este software, sus arquitecturas, código fuente, interfaces de usuario, 
+diseños, estilos visuales, modelos matemáticos, algoritmos, componentes,
+textos y documentación técnica asociada (en adelante, el "Software") constituyen 
+propiedad privada, exclusiva y confidencial de CustomAI Solutions Lab S.L.
+
+1. PROHIBICIÓN EXPRESA DE COPIA, DISTRIBUCIÓN Y ACCESO NO AUTORIZADO
+Queda terminantemente prohibida la copia, reproducción, duplicación, cesión, 
+distribución, sublicenciamiento, venta, arrendamiento, comunicación pública 
+o puesta a disposición de terceros de este Software o de cualquier elemento 
+derivado del mismo, total o parcialmente, sin la previa autorización expresa, 
+formal y por escrito de CustomAI Solutions Lab S.L.
+
+2. SECRETO EMPRESARIAL E INGENIERÍA INVERSA
+El Software contiene secretos comerciales y empresariales protegidos por la Ley 
+1/2019 de Secretos Empresariales y la legislación europea aplicable. Queda 
+estrictamente prohibido descompilar, aplicar ingeniería inversa, desensamblar, 
+desofuscar, realizar scraping, extraer modelos o descifrar la arquitectura 
+del Software.
+
+3. USO AUTORIZADO
+El acceso a este Software está estrictamente limitado a personal interno 
+autorizado de CustomAI Solutions Lab S.L. y a clientes o entidades que cuenten 
+con un contrato comercial vinculante o acuerdo bilateral de confidencialidad (NDA) 
+expresamente formalizado.
+
+4. DATOS DE CONTACTO Y NOTIFICACIONES LEGALES
+CustomAI Solutions Lab S.L.
+Domicilio: Calle Santa Genoveva Torres 30, 46019 Valencia, España.
+Correo oficial: hello@ecoailab.es
 ===============================================================================
-AVISO DE PROPIEDAD INTELECTUAL Y LICENCIA PROPIETARIA
-===============================================================================
-
-Este software, su código fuente, arquitectura, diseño y componentes asociados
-son propiedad exclusiva y confidencial de CustomAI Solutions Lab S.L.
-
-1. PROHIBICIÓN DE COPIA Y DISTRIBUCIÓN
-Queda expresamente prohibida la copia, reproducción, duplicación, distribución,
-sublicenciamiento, venta, alquiler, cesión o comunicación pública, total o 
-parcial, de este Software sin el consentimiento previo, expreso y por escrito 
-de CustomAI Solutions Lab S.L.
-
-2. INGENIERÍA INVERSA Y OBRAS DERIVADAS
-Queda terminantemente prohibido descompilar, realizar ingeniería inversa, 
-desensamblar, desofuscar o intentar descubrir el código fuente o los 
-algoritmos subyacentes del Software, así como crear obras derivadas basadas 
-en el mismo.
-
-3. CONTACTO Y TITULARIDAD
-Titular: CustomAI Solutions Lab S.L.
-Contacto: hello@ecoailab.es

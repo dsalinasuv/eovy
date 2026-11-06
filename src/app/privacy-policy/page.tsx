@@ -1,114 +1,112 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import type { Metadata } from 'next';
+import { ArrowLeft } from 'lucide-react';
+import { Wordmark } from '@/components/web/Wordmark';
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad | EcoAI Lab',
-  description: 'Información sobre el tratamiento de datos personales en EcoAI Lab.',
+  title: 'Política de Privacidad y Protección de Datos (RGPD) | Eovy',
+  description: 'Tratamiento de datos personales conforme al Reglamento General de Protección de Datos (RGPD) en Eovy (CustomAI Solutions Lab S.L.).',
 };
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Mini nav */}
-      <nav className="border-b border-slate-100 px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-bold text-slate-900 text-sm flex items-center gap-2.5">
-          <div className="relative h-7 w-9 rounded-md overflow-hidden bg-slate-950 border border-slate-700/60 shadow-xs flex items-center justify-center p-0.5">
-            <Image
-              src="/images/logo_ecoai.png"
-              alt="EcoAI Lab"
-              width={36}
-              height={28}
-              className="object-contain w-full h-full"
-            />
-          </div>
-          EcoAI Lab
+    <div className="min-h-screen bg-slate-50 text-slate-800 selection:bg-sky-500 selection:text-white">
+      <nav className="border-b border-slate-200 bg-white/90 backdrop-blur-md px-6 py-4 flex items-center justify-between sticky top-0 z-30">
+        <Link href="/" className="flex items-center gap-2.5">
+          <Wordmark tone="dark" size="sm" />
         </Link>
-        <Link href="/" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">← Volver</Link>
+        <Link href="/" className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors">
+          <ArrowLeft className="w-3.5 h-3.5" />
+          <span>Volver a Eovy</span>
+        </Link>
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-16">
-        <p className="text-sky-600 text-xs font-semibold uppercase tracking-[0.2em] mb-3">Legal</p>
-        <h1 className="text-3xl font-black text-slate-900 mb-2">Política de Privacidad</h1>
-        <p className="text-slate-500 text-sm mb-10">Última actualización: octubre 2026</p>
+        <div className="bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 shadow-sm space-y-8">
+          <div>
+            <p className="text-eo-leaf text-xs font-semibold uppercase tracking-wider mb-2">Legal · Cumplimiento RGPD</p>
+            <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Política de Privacidad y Protección de Datos</h1>
+            <p className="text-slate-500 text-xs mt-2">Última actualización: Noviembre 2026 · Titular: CustomAI Solutions Lab S.L.</p>
+          </div>
 
-        <div className="prose prose-slate max-w-none text-sm leading-relaxed space-y-8">
+          <div className="space-y-8 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-6">
 
-          <section>
-            <h2 className="text-lg font-bold text-slate-900 mb-3">1. Responsable del Tratamiento</h2>
-            <p className="text-slate-600">
-              <strong>CustomAI Solutions Lab S.L.</strong> (titular de EcoAI Lab)<br />
-              Domicilio: Valencia, Calle Santa Genoveva Torres 30, España.<br />
-              Contacto de Privacidad & DPO: <a href="mailto:hello@ecoailab.es" className="text-sky-600 hover:underline">hello@ecoailab.es</a>
-            </p>
-          </section>
+            <section>
+              <h2 className="text-base font-bold text-slate-900 mb-2">1. Responsable del Tratamiento</h2>
+              <p>
+                El responsable del tratamiento de los datos personales recabados a través de la plataforma <strong>Eovy</strong> es:
+              </p>
+              <div className="mt-3 p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-1 text-xs">
+                <p><strong>Razón Social:</strong> CustomAI Solutions Lab S.L.</p>
+                <p><strong>Domicilio Social:</strong> Calle Santa Genoveva Torres 30, 46019 Valencia, España.</p>
+                <p><strong>Contacto de Privacidad y DPO:</strong> <a href="mailto:hello@ecoailab.es" className="text-eo-leaf font-semibold hover:underline">hello@ecoailab.es</a></p>
+              </div>
+            </section>
 
-          <section>
-            <h2 className="text-lg font-bold text-slate-900 mb-3">2. Datos Recogidos y Finalidad</h2>
-            <table className="w-full text-xs border-collapse border border-slate-200 rounded-lg overflow-hidden">
-              <thead className="bg-slate-50">
-                <tr>
-                  <th className="border border-slate-200 px-3 py-2 text-left font-semibold text-slate-700">Dato</th>
-                  <th className="border border-slate-200 px-3 py-2 text-left font-semibold text-slate-700">Finalidad</th>
-                  <th className="border border-slate-200 px-3 py-2 text-left font-semibold text-slate-700">Base legal</th>
-                </tr>
-              </thead>
-              <tbody className="text-slate-600">
-                <tr>
-                  <td className="border border-slate-200 px-3 py-2">Nombre, email, empresa</td>
-                  <td className="border border-slate-200 px-3 py-2">Gestión de demos y contacto comercial</td>
-                  <td className="border border-slate-200 px-3 py-2">Consentimiento (Art. 6.1.a RGPD)</td>
-                </tr>
-                <tr className="bg-slate-50/50">
-                  <td className="border border-slate-200 px-3 py-2">Datos de navegación (IP, cookies analíticas)</td>
-                  <td className="border border-slate-200 px-3 py-2">Mejora del servicio y analítica web</td>
-                  <td className="border border-slate-200 px-3 py-2">Consentimiento previo (ePrivacy)</td>
-                </tr>
-                <tr>
-                  <td className="border border-slate-200 px-3 py-2">Credenciales de acceso (clientes)</td>
-                  <td className="border border-slate-200 px-3 py-2">Acceso a la plataforma privada</td>
-                  <td className="border border-slate-200 px-3 py-2">Ejecución de contrato (Art. 6.1.b)</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+            <section>
+              <h2 className="text-base font-bold text-slate-900 mb-2">2. Finalidades y Base Jurídica del Tratamiento</h2>
+              <p>
+                De conformidad con el <strong>Reglamento (UE) 2016/679 (RGPD)</strong> y la <strong>Ley Orgánica 3/2018 (LOPDGDD)</strong>, los datos personales facilitados serán tratados para:
+              </p>
+              <div className="mt-3 overflow-x-auto">
+                <table className="w-full text-xs border-collapse border border-slate-200 rounded-lg overflow-hidden">
+                  <thead className="bg-slate-50 text-slate-800">
+                    <tr>
+                      <th className="border border-slate-200 p-2.5 text-left font-semibold">Datos</th>
+                      <th className="border border-slate-200 p-2.5 text-left font-semibold">Finalidad</th>
+                      <th className="border border-slate-200 p-2.5 text-left font-semibold">Base Jurídica</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-slate-200 p-2.5">Nombre, correo corporativo, empresa y mensaje</td>
+                      <td className="border border-slate-200 p-2.5">Atención y respuesta a solicitudes de contacto y demostraciones privadas</td>
+                      <td className="border border-slate-200 p-2.5">Consentimiento expreso del interesado (Art. 6.1.a RGPD)</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-slate-200 p-2.5">Dirección IP y cabeceras de navegación mínimas</td>
+                      <td className="border border-slate-200 p-2.5">Seguridad perimetral, prevención de abusos (honeypot) y rate limiting</td>
+                      <td className="border border-slate-200 p-2.5">Interés legítimo en la ciberseguridad del sistema (Art. 6.1.f RGPD)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
 
-          <section>
-            <h2 className="text-lg font-bold text-slate-900 mb-3">3. Plazo de Conservación</h2>
-            <p className="text-slate-600">Los datos de contacto se conservan durante <strong>24 meses</strong> desde la última interacción, o hasta que el usuario solicite su supresión. Las cookies analíticas expiran según su configuración (máximo 13 meses).</p>
-          </section>
+            <section>
+              <h2 className="text-base font-bold text-slate-900 mb-2">3. Principio de Minimización y Cero Almacenamiento Innecesario</h2>
+              <p>
+                La web corporativa de Eovy opera bajo una arquitectura desacoplada y sin estado de base de datos. Los mensajes remitidos mediante el formulario de contacto se procesan y transmiten directamente a través de protocolo seguro SMTP hacia el correo oficial del titular, sin quedar registrados en bases de datos web intermedias ni compartirse con terceros proveedores publicitarios.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-lg font-bold text-slate-900 mb-3">4. Derechos del Usuario</h2>
-            <p className="text-slate-600 mb-2">Puede ejercer los siguientes derechos enviando un email a <a href="mailto:hello@ecoailab.es" className="text-sky-600 hover:underline font-mono">hello@ecoailab.es</a>:</p>
-            <ul className="list-disc list-inside text-slate-600 space-y-1">
-              <li>Acceso, rectificación y supresión de datos</li>
-              <li>Limitación y oposición al tratamiento</li>
-              <li>Portabilidad de los datos</li>
-              <li>Retirada del consentimiento en cualquier momento</li>
-            </ul>
-          </section>
+            <section>
+              <h2 className="text-base font-bold text-slate-900 mb-2">4. Plazo de Conservación</h2>
+              <p>
+                Los datos de contacto se conservarán durante el tiempo estrictamente necesario para atender la consulta corporativa planteada y, en su caso, mientras se mantenga la relación comercial o precontractual, tras lo cual serán suprimidos o bloqueados conforme a los plazos legales de prescripción.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-lg font-bold text-slate-900 mb-3">5. Transferencias Internacionales</h2>
-            <p className="text-slate-600">No se realizan transferencias internacionales de datos fuera del Espacio Económico Europeo, salvo el uso de Google Analytics (EE. UU.) bajo las garantías del Marco de Privacidad UE–EE. UU. (adequacy decision).</p>
-          </section>
+            <section>
+              <h2 className="text-base font-bold text-slate-900 mb-2">5. Derechos del Usuario (ARCO+)</h2>
+              <p>
+                El usuario puede ejercer en cualquier momento sus derechos de <strong>acceso, rectificación, supresión, limitación del tratamiento, oposición y portabilidad</strong> enviando una comunicación escrita, acompañada de copia de documento acreditativo de su identidad, a:
+              </p>
+              <p className="mt-2 font-mono text-xs text-eo-leaf font-semibold">
+                hello@ecoailab.es (Ref: Ejercicio Derechos Privacidad Eovy)
+              </p>
+              <p className="mt-2">
+                Asimismo, le informamos de su derecho a presentar una reclamación ante la autoridad de control competente, la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" className="text-eo-leaf hover:underline">www.aepd.es</a>, en caso de considerar vulnerados sus derechos.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-lg font-bold text-slate-900 mb-3">6. Reclamaciones</h2>
-            <p className="text-slate-600">Tiene derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" className="text-sky-600 hover:underline" target="_blank" rel="noopener noreferrer">www.aepd.es</a>.</p>
-          </section>
-
+          </div>
         </div>
       </main>
 
-      <footer className="border-t border-slate-100 py-8 px-6 text-center">
-        <div className="flex items-center justify-center gap-6 text-xs text-slate-400">
-          <Link href="/privacy-policy" className="hover:text-slate-700">Privacidad</Link>
-          <Link href="/terms" className="hover:text-slate-700">Términos</Link>
-          <Link href="/cookies" className="hover:text-slate-700">Cookies</Link>
-        </div>
+      <footer className="border-t border-slate-200 py-6 text-center text-xs text-slate-400">
+        <p>© {new Date().getFullYear()} CustomAI Solutions Lab S.L. · Todos los derechos reservados. Propiedad privada y confidencial.</p>
       </footer>
     </div>
   );
